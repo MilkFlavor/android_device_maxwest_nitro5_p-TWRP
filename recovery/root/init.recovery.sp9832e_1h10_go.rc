@@ -1,0 +1,12 @@
+#add for board init.rc for recovery mode
+on post-fs
+    insmod /vendor/lib/modules/bstclass.ko
+    #insmod /vendor/lib/modules/bma2x2.ko
+    #insmod /vendor/lib/modules/ltr_558als.ko
+    #insmod /vendor/lib/modules/akm09911.ko
+    
+    #added by cheguosheng
+    insmod /vendor/lib/modules/stk8baxx.ko
+    insmod /vendor/lib/modules/mc34xx.ko
+    insmod /vendor/lib/modules/mir3da.ko
+    insmod /vendor/lib/modules/stk3x1x.ko
